@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import 'antd/dist/reset.css';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +26,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <header>
+          <nav style={{ boxShadow: '0 2px 8px #f0f1f2', marginBottom: 24 }}>
+            <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', height: 64 }}>
+                <span style={{ fontWeight: 700, fontSize: 24 }}>IR Infotech</span>
+                <div style={{ marginLeft: 'auto', display: 'flex', gap: 16 }}>
+                  <a href="/">Home</a>
+                  <a href="#features">Features</a>
+                  <a href="#contact">Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
         {children}
       </body>
     </html>
