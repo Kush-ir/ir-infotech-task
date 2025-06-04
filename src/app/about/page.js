@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Typography, Row, Col, Card, Space, Avatar } from 'antd';
-import { UserOutlined, TeamOutlined, RocketOutlined, TrophyOutlined } from '@ant-design/icons';
+import { TeamOutlined, RocketOutlined, TrophyOutlined } from '@ant-design/icons';
 
 const { Title, Paragraph } = Typography;
 
@@ -38,7 +38,7 @@ export default function AboutPage() {
         <Title level={1}>About IR Infotech</Title>
         <Paragraph style={{ fontSize: 18, maxWidth: 800, margin: '0 auto' }}>
           We are a leading technology company dedicated to transforming businesses through innovative solutions.
-          With over a decade of experience, we've helped numerous organizations achieve their digital goals.
+          With over a decade of experience, we&apos;ve helped numerous organizations achieve their digital goals.
         </Paragraph>
       </div>
 
