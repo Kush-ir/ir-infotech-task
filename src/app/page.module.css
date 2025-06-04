@@ -59,6 +59,8 @@
 .ctas {
   display: flex;
   gap: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 .ctas a {
@@ -165,4 +167,21 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.heroTitle {
+  /* Add specific styles for the hero title if needed */
+}
+
+.heroText {
+  /* Add specific styles for the hero text if needed */
+  max-width: 600px; /* Example: Limit text width for better readability */
 }
